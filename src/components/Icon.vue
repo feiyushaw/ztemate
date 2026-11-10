@@ -1,0 +1,85 @@
+<script setup lang="ts">
+import {
+  Activity,
+  ArrowDown,
+  ArrowUp,
+  ArrowUpRight,
+  Bell,
+  Check,
+  ChevronRight,
+  Copy,
+  EthernetPort,
+  ExternalLink,
+  Gauge,
+  Globe,
+  Info,
+  Laptop,
+  LayoutDashboard,
+  LoaderCircle,
+  Mail,
+  MessageSquare,
+  Moon,
+  MoreHorizontal,
+  Network,
+  Pause,
+  Play,
+  Plus,
+  Radio,
+  RefreshCw,
+  Router,
+  Search,
+  Settings,
+  ShieldCheck,
+  Signal,
+  Sun,
+  Wifi,
+  X,
+} from "lucide-vue-next";
+const props = withDefaults(defineProps<{ name: string; size?: number }>(), {
+  size: 18,
+});
+const icons: Record<string, unknown> = {
+  Activity,
+  ArrowDown,
+  ArrowUp,
+  ArrowUpRight,
+  Bell,
+  Check,
+  ChevronRight,
+  Copy,
+  EthernetPort,
+  ExternalLink,
+  Gauge,
+  Globe,
+  Info,
+  Laptop,
+  LayoutDashboard,
+  LoaderCircle,
+  Mail,
+  MessageSquare,
+  Moon,
+  MoreHorizontal,
+  Network,
+  Pause,
+  Play,
+  Plus,
+  Radio,
+  RefreshCw,
+  Router,
+  Search,
+  Settings,
+  ShieldCheck,
+  Signal,
+  Sun,
+  Wifi,
+  X,
+};
+</script>
+<template>
+  <component
+    :is="icons[props.name] || icons.Info"
+    :size="size"
+    :stroke-width="1.7"
+    aria-hidden="true"
+  />
+</template>

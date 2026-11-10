@@ -1,0 +1,17 @@
+node_modules/
+dist/
+build/
+.mygo/
+.cache/
+.env*
+*.db
+*.db-shm
+*.db-wal
+.DS_Store
+src/mygo.generated.ts
+
+# Local diagnostics and captures
+*.har
+*.pcap
+*.pcapng
+*.log
